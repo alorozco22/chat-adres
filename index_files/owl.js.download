@@ -1,0 +1,147 @@
+﻿$(document).ready(function() {
+
+	var sliderHome = $('#slider-home');
+			sliderHome.owlCarousel({
+				lazyLoad: true,
+				slideSpeed : 5000, 
+				nav: false,
+				autoplay: true,
+				animateOut: 'fadeOut',
+				responsiveRefreshRate : 1000,
+				items : 1,			
+				dots: true,						
+				autoplayTimeout:2000,
+			    autoplayHoverPause:true,				
+				loop: true,	
+				
+				responsive:{
+			        0:{
+			            items:1
+			        },
+			        600:{
+			            items:1 
+			        },
+			        1000:{
+			            items:1
+			        }
+			    }	   
+			});
+
+	//!Inicializar slider entidades
+	const sliderEntidades = $('#slider-entidades');
+	sliderEntidades.owlCarousel({
+		items : 4,
+		lazyLoad: true,
+		dots: false,
+		slideSpeed : 5000, 
+		nav: true,
+		autoplay: true,
+		animateOut: 'fadeOut',
+		loop: true,
+		responsiveRefreshRate : 200,
+		pagination: true,
+		navText: [ 
+		"<i class='icon enty-chevron-left'></i>",
+		"<i class='icon enty-chevron-right'></i>"
+		],
+			responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:1 
+			},
+			1000:{
+				items:4
+			}
+		}
+	});
+	
+	//! modificar la fecha del slider agenda
+	const dateActual = new Date()
+	const yearsActual = dateActual.getFullYear();
+	const fecha = document.querySelectorAll('#slider-agenda .col-3 div');
+	let countItems = 0;
+	// fecha.reverse()
+	$.each(fecha, function(key, item){
+		var p = new Date(item.textContent);
+		if(p.getFullYear() === yearsActual && p.getMonth() + 1  >= dateActual.getMonth() + 1 && countItems < 10){
+			if(p.getMonth() + 1  >= dateActual.getMonth() + 1){
+				if(p.getMonth() + 1  == dateActual.getMonth() + 1){
+					if(p.getDate() >= dateActual.getDate() ){
+						countItems = countItems + 1;
+						var months = ["ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEP", "OCT", "NOV", "DIC"];
+						var mes = months[p.getMonth()];
+						var dia = p.getDate();
+						item.innerHTML = '<p class="day-event">'+dia+'</p><p class="mouth-event">'+mes+'</p>';
+						console.log(p, dia, months, mes);
+					}
+					else{
+						$(item).parent().parent().parent().remove()
+					}
+                }
+				else{
+					countItems = countItems + 1;
+                    var months = ["ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEP", "OCT", "NOV", "DIC"];
+                    var mes = months[p.getMonth()];
+                    var dia = p.getDate();
+                    item.innerHTML = '<p class="day-event">'+dia+'</p><p class="mouth-event">'+mes+'</p>';
+                    console.log(p, dia, months, mes);
+				}
+			}
+			else{
+                $(item).parent().parent().parent().remove()
+            }   
+		}
+		else{
+			$(item).parent().parent().parent().remove()
+		}
+		
+	})
+	//!Inicializar slider agenda
+	const sliderAgenda = $('#slider-agenda');
+	sliderAgenda.owlCarousel({
+		animateOut: 'slideOutDown',
+    	animateIn: 'flipInX',
+		items : 2,
+		margin: 10,
+		lazyLoad: true,
+		dots: true,
+		slideSpeed : 5000, 
+		nav: false,
+		autoplay: false,
+		autoplayHoverPause:true,
+		// animateOut: 'animate__flipOutX',
+		loop: true,
+		responsiveRefreshRate : 200,
+		pagination: true,
+			responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:1 
+			},
+			1000:{
+				items:2
+			}
+		}	   
+		//!recordar las animaciones solo funcionan con un item
+		// animateOut: 'slideOutDown',
+		// animateIn: 'flipInX',
+		// items: 2,
+		// margin: 30,
+		// stagePadding: 30,
+                
+	});
+	//!agregar número a los dots
+	const dots = document.querySelectorAll('#slider-agenda .owl-dots button span');
+	$.each(dots,function (key, item) { 
+		item.textContent = key+1 
+	})
+	// dots.forEach((item, index) => item.textContent = index+1)
+
+
+	
+
+})

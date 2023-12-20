@@ -1,0 +1,554 @@
+﻿@import '/Style Library/Adres/Styles/Less/vars.less';
+
+@media (max-width: 991px) {
+	footer{
+		.pre-footer{
+			.subfooter{
+				li{
+					&:nth-child(5){
+						position: relative;
+						right: 0;
+						top: 0;
+					}
+					&:nth-child(6){
+						position: relative;
+						top: 0;
+						right: 0;
+					}
+				}
+			}
+		}
+	}
+	#home{
+		.prensa-home{
+			.press-left{
+				.ms-webpartzone-cell:first-child{
+					p{
+						display: none;
+					}
+				}
+			}
+		}
+		#slider-home{
+			.owl-stage a{
+				background-position: right !important;
+				height: 137px !important;
+				background-repeat: no-repeat !important;
+				.col-12.col-lg-6{
+					align-items: start;
+					padding-top: 10px;	
+					height: auto;			
+				}
+				.conte-slidernot{
+					p{
+						display: none;
+					}
+					button{
+						display: none;
+					}
+				}
+			}	
+		}
+	}
+	#ms-designer-ribbon{
+		display: none;
+	}
+	#header{
+		.header-firts.justify-content-between{
+			height: auto;
+			padding-top: 20px;
+			.left{
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+			.text-left{
+				margin-bottom: 20px;
+			}
+			.right{
+				margin-right: 0;
+			}
+		}
+	}     
+	#slider-entidades{
+		.owl-nav{
+			button.owl-next{
+				right: -20px;
+			}
+		}
+		img{
+			display: flex;
+			justify-content: center;
+			margin: auto;
+		}
+	}
+	
+	.imag-menu .content-imagemenu .slm-layout-main.groupmarker ul li{
+		width: 40%;
+	}
+	.glosario .content-glosario ul.nav-tabs{
+		display: block !important;
+		li{
+			display: inline-block;
+			padding: 10px 10px 13px;
+			margin: 10px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+
+	.enty-chevron-right::before	{
+		font-size: 2rem;
+		position: relative;
+		top: 0.5rem;
+	}
+	#home .noti-slider #slider-home .title-slider{
+		font-size: 14px;
+	}
+	#home .prensa-home .sal-home p{
+		display: none;
+	}
+}
+@media (max-width: 748px) {
+	table{
+		display: block;
+		overflow-x: auto;
+		height: auto !important;
+	}
+	.equipo .links-acceso .col-12.col-lg-2 .link-home .item-link{
+		margin-bottom: 20px;
+	}
+	.faq .box div.panel-top .jplist-group .form-group{
+		width: 100%;
+	}
+	.img-collapse{
+		table{
+			display: table;
+		}
+	}
+	.junta-directiva{
+		.col-12.col-lg-3 {
+			margin-bottom: 25px;
+		}
+	}
+	#miembros .card-junta a{
+		justify-content: center;
+		visibility: visible;
+		.icon{
+			visibility: visible;
+		}
+	}
+	.equipo .content-page .equipo-directivo .card-equipo .content-equipo{
+		height: 222px;
+		a{
+			visibility: visible;
+			.icon{
+				visibility: visible;
+			}
+		}
+	}
+	.post-noti .noticia-img{
+		height: 155px;
+	}
+	.post-conten {
+		margin-bottom: 20px;
+	}
+	.audios-listado .panel-top, .noticia-listado .jplist-panel{
+		display: block;
+		padding: 0px 15px;
+		.jplist-drop-down{
+			margin-bottom: 10px;
+		}
+		.text-filter-box{
+			margin-bottom: 10px;
+		}
+	}
+	.access-interest .header-logo{
+		div:last-child{
+			text-align: center;
+			a{
+				display: block;
+			}
+		} 
+	}
+	.directorio .right-area{
+		left: auto;
+	}
+	#home .noti-slider #slider-home .owl-dots{
+		bottom: 0;
+	}
+	#home .links-acceso{
+		top: 10px;
+	}
+}
+/**** //!  responsive */
+
+/* Contraste Activado */
+.contrast-active{
+	background: black;
+	color: white !important;
+	.header-second #menu-sharepoint .ms-core-listMenu-root li ul.dynamic li.dynamic a:hover{
+		background: black;	
+	}
+	#home .noti-slider #slider-home .btn-slider:hover{
+		background: @yellow;
+		color: #273656 !important;
+	}
+	#header{
+		background: #273656;
+		.header-second{
+			background: #273656;
+			border-top: 1px solid white;
+    border-bottom: 1px solid white;
+			.col-12.contrast-active{
+				background: #273656;
+			}
+			#menu-sharepoint{
+				.ms-breadcrumb-top{
+					background: #273656;
+				}
+				.ms-core-listMenu-root{
+					li {
+						background: #273656;
+						a.static{
+							background: #273656;
+							&:hover::after{
+								background: @ligth;
+							}
+							&.selected{
+								&::before{
+									background: @ligth;
+								}
+								span{
+									color: @ligth;
+								}
+							}
+							span{
+								color: @ligth;
+							}
+						}
+						ul.dynamic{
+							background: black;
+						}
+					}
+				}
+			}
+		}
+		.headerthird{
+			background: #273656;
+			.container{
+				background: #273656;
+				.col-6{
+					background: #273656;
+					a{
+						background: #273656;
+					}
+				}
+			}
+		}
+	}
+	#header .header-firts.justify-content-between{
+		background: black;
+	} 
+	.owl-item{
+		background: transparent;
+		.container{
+			background: transparent;
+			.row{
+				background: transparent;
+				.col-12.col-lg-6{
+					background: transparent;
+					.conte-slidernot{
+						background: transparent;
+					}
+					.title-slider{
+						background: transparent;
+					}
+					p{
+						background: transparent;
+					}
+				}
+			}
+		}
+	}
+	.owl-dots{
+		background: transparent;
+		span{
+			background: black !important;
+
+		}
+		.owl-dot.active span{
+			background: @yellow !important;
+		}
+	}
+	.links-acceso{
+		background: transparent;
+		div{
+			background: transparent;
+			p{
+				background: transparent;
+				color: #273656 !important;
+			}
+		}
+		.col-12.col-lg-2:first-child .link-home .item-link{
+			background-color: #000000 !important;
+			box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.078) !important;
+			border: 1px solid #FFFFFF;
+			&:hover{
+				background: @yellow;
+				p{
+					color: @hoverdark !important;	
+				}
+			}
+			p{
+				color: @ligth !important;
+			}
+		}
+	}
+	#home .prensa-home{
+		background: black !important;
+		.press-left{
+			.ms-webpartzone-cell:first-child p{
+				color: @hoverdark !important;
+			}
+			.link-item a{
+				&:hover{
+					color: @yellow !important;
+					&::before{
+						background: @yellow;	
+					}
+				}
+				&::before{
+					background: @ligth;
+				}
+				
+			}
+			#slider-agenda{
+				a{
+					.col-3{
+						background: black !important;
+						border: 1px solid @yellow;
+						border-right: 3px solid @yellow;
+						&::after{
+							background: @yellow;
+							color: black;
+						}
+					}
+					.col-9{
+						p{
+							background: transparent;
+							color: #000000 !important;
+						}
+						&:hover{
+							background: @yellow;
+						}
+					}
+				}
+				.owl-dots {
+					.owl-dot.active span{
+						background: transparent !important;
+						border-bottom: 3px solid @ligth;
+					}
+				}
+			}
+		} 
+		.noti-home a span.icon{
+			border: 1px solid @ligth !important;
+		}
+	}
+	h2{
+		background: transparent;
+		a{
+			background: transparent;
+		}
+		&::after{
+			border: 1px solid @ligth !important;
+		}
+	}
+	.press-right {
+		background: transparent;
+		.video-home p::before{
+			color: @ligth;
+		}
+		.redes{
+			background: transparent;
+			.nav-tabs{
+				background: transparent;
+				li{
+					background: transparent;
+					a.active{
+						background: black;
+						border-bottom: 5px solid @ligth;
+						i{
+							color: @ligth;
+						}
+						
+					}
+					a.active[href="#facebook"]{
+						background: black;
+						border-bottom: 5px solid @ligth;
+						i{
+							color: @ligth;
+						}
+					}
+					a{
+						i{
+							color: @ligth;
+						}
+					}
+				}
+			}
+		}
+	}
+	.access-interest{
+		background: @hoverdark;
+		.container{
+			background: @hoverdark;
+			.row{
+				background: @hoverdark;
+				.col-12{
+					background: @hoverdark;
+					.ms-fullWidth{
+						background: @hoverdark;
+					}
+					h3{
+						background: @hoverdark;
+					}
+					.col-12.col-lg-4 {
+						background: @hoverdark;
+						.interese-item{
+							background: @hoverdark;
+							a{
+								background: @hoverdark;
+							}
+						}
+					}
+					.owl-item{
+						background: @hoverdark;
+						a{
+							background: @hoverdark;
+						}
+					}
+				}
+			}
+		}
+	}
+	footer .pre-footer{
+		background:@hoverdark;
+		border-top: 1px solid @ligth;
+		border-bottom: 1px solid @ligth;
+		div{
+			background: @hoverdark;
+		}
+		.col-12{
+			background: @hoverdark;
+			.subfooter{
+				background: @hoverdark;
+				li{
+					background: @hoverdark;
+					a{
+						background: @hoverdark;
+						p{
+							background: @hoverdark;
+						}
+					}
+				}
+			}
+		}
+	}
+	#home .interese-item a:hover{
+		color: @yellow !important;
+	}
+	#footer #boton-ir-arriba{
+		background-color: @yellow;
+		&:hover{
+			background-color: @yellow;
+		}
+		i{
+			color: black !important;
+		}
+	}
+	#home .links-acceso .col-12.col-lg-2 .link-home .item-link:hover{
+		background: @yellow;
+	}
+	#slider-entidades .owl-nav button i{
+		color: @ligth;
+	}
+	//!misison
+
+	//!tablas
+	.three-column .dataTables_wrapper {
+		.tableNormativa thead tr th:not(.sorting_disabled), .three-column .dataTables_wrapper .tableNormativa thead tr td:not(.sorting_disabled) {
+			padding-right: 0;
+			padding-left: 30px;
+			color: white;
+		}
+		.dataTables_info, table.dataTable td.dataTables_empty, table.dataTable th.dataTables_empty {
+			color: white;
+		}
+
+	}
+	img#MSOImageWebPart_WebPartWPQ14,img#MSOImageWebPart_WebPartWPQ12 {
+		filter: brightness(4);
+	}
+
+	li::before {
+		filter: brightness(4.5);
+	}
+
+	.detalle-miembro .card-perfil .img-perfil{
+		margin-bottom: 0 !important;
+	}
+
+	#miembros .junta-directiva .card-junta:hover {
+		background-color: black !important;
+	}
+	.directorio #demo .jplist-panel.box.panel-top .text-filter-box::after{
+		color: @ligth;
+	}
+	.directorio #demo .jplist-panel.box.panel-top .text-filter-box input{
+		background: transparent;
+		border: 1px solid @ligth;
+		&::-webkit-input-placeholder{
+			color:@ligth !important;
+		}
+		&::-moz-placeholder{
+			color:@ligth !important;
+		}
+		&:-ms-input-placeholder {
+			color:@ligth !important;
+		}
+		&:-moz-placeholder{
+			color:@ligth !important;
+		}
+	}
+	.directorio #demo .list.box .list-item{
+		background: transparent;
+		border: 1px solid @ligth;
+	}
+	#pageStatusBar{
+		border: none;
+    	padding: 0;
+    	margin: 0;
+	}
+}
+//! clase contraste
+.item-tramite .conte-trami .contrast-active .col-6:first-child {
+    border-right: 1px solid white !important;
+}
+#access-bar.contrast-active{
+
+ 	a#aumentar, a#reducir{
+		background-color: transparent !important;
+	}
+}
+.header-logo.nopadding div.contrast-active:first-child img {
+     filter: brightness(3);
+}
+.container.data-image.slider-descargar.contrast-active{
+	background-color: transparent !important;
+}
+/* Contraste Activado */
+#pageStatusBar{
+	display: none;
+}

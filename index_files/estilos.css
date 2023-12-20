@@ -1,0 +1,582 @@
+﻿/* =======================================
+    Hoja de estilos pala las Aplicaciones
+   =======================================
+*/
+
+/* Color de fondo del contenido de las páginas */
+Body
+{
+    background-color: white;
+    font-weight: 700;
+}
+
+/* Estilo para el head */
+.Head
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #39420C;
+}
+
+
+/* Estilo de letra pequeña se utiliza en la mayoria de tablas*/
+.Normal
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    color: #000000; /*text-align:right;*/
+}
+
+/* Estilo de letra que se utiliza en casi todo el contenido*/
+.NormalGrande
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #000000;
+    text-align: justify;
+}
+
+/* Letra que se utiliza para los titulos */
+.NormalBold
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+}
+
+/*Letra usada para subrayar un texto*/
+.NormalSubrayada
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* Letra para mensajes de error o notas importantes*/
+.NormalRed
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+/* Estilo de letra usado para los textos que aparecen desactivados */
+.NormalDisabled
+{
+    color: Silver;
+}
+
+/* Texto que se utiliza en los TextBox */
+.NormalTextBox
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0 3px 3px 0;
+    padding: 5px 5px 4px 5px;
+    text-decoration: none;
+    background-position: 0 -41px;
+}
+
+
+/* Estilo usado en las tablas */
+.DataGrid_AlternatingItem
+{
+    background-color: White;
+    color: #39420C;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+}
+.DataGrid_Container
+{
+    background-color: Transparent;
+}
+.DataGrid_Footer
+{
+    background-color: White;
+}
+.DataGrid_Header
+{
+    background-color: Transparent;
+    color: Black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.DataGrid_Item
+{
+    background-color: Transparent;
+    color: Black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+}
+.modal
+{
+    background-color: Gray;
+    -ms-filter: alpha(opacity=40);
+    -ms-opacity: 0.2;
+}
+.modalBackground
+{
+    background-color: #3753fc;
+    -ms-filter: alpha(opacity=45);
+    -ms-opacity: 0.2;
+    z-index: 10000;
+}
+
+.Marco
+{
+    overflow: auto;
+}
+.DataGrid_SelectedItem
+{
+    background-color: Silver;
+    color: Blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+/* Estilo para los botones*/
+.StandardButton
+{
+    padding-right: 5px;
+    padding-left: 5px;
+    font-weight: normal;
+    font-size: 11px;
+    background: #39420C;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+}
+
+/* GENERIC */
+H1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #39420C;
+}
+
+H2
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #39420C;
+}
+
+H3
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #39420C;
+}
+
+H4
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #39420C;
+}
+
+H5, DT
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #39420C;
+}
+
+H6
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #39420C;
+}
+
+TFOOT, THEAD
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #39420C;
+}
+
+TH
+{
+    vertical-align: baseline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #39420C;
+}
+
+A:link
+{
+    text-decoration: underline;
+    color: #39420C;
+}
+
+A:visited
+{
+    text-decoration: none;
+    color: #39420C;
+}
+
+A:hover
+{
+    text-decoration: underline;
+    color: #ff0000;
+}
+
+A:active
+{
+    text-decoration: none;
+    color: #39420C;
+}
+
+SMALL
+{
+    font-size: 8px;
+}
+
+BIG
+{
+    font-size: 14px;
+}
+
+BLOCKQUOTE, PRE
+{
+    font-family: Lucida Console, monospace;
+}
+
+
+UL LI
+{
+    list-style-type: square;
+}
+
+UL LI LI
+{
+    list-style-type: disc;
+}
+
+UL LI LI LI
+{
+    list-style-type: circle;
+}
+
+OL LI
+{
+    list-style-type: decimal;
+}
+
+OL OL LI
+{
+    list-style-type: lower-alpha;
+}
+
+OL OL OL LI
+{
+    list-style-type: lower-roman;
+}
+OL UL LI
+{
+    list-style-type: disc;
+}
+
+HR
+{
+    color: #696969;
+    height: 1pt;
+    text-align: left;
+}
+
+/* MODAL POPUP*/
+.mpBg
+{
+    background-color: #3753fc;
+    -ms-filter: alpha(opacity=35);
+    -ms-opacity: 0.3;
+}
+.mp
+{
+    background-color: white;
+    border-width: 3px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+}
+.mpHd
+{
+    background-color: #616cae;
+    border-color: White;
+    border-width: 1px;
+    color: White;
+    font-weight: bold;
+    width: 100%;
+    height: 16px;
+    text-align: center;
+}
+.mpClose
+{
+    text-align: center;
+    width: 100%;
+}
+.mpCloseButton
+{
+    position: absolute;
+    right: 4px;
+    width: 17px;
+    height: 18px;
+}
+
+/**** AJAX CALENDAR ****/
+.calendar_Theme .ajax__calendar_container
+{
+    background-color: #39420C;
+    border: solid 1px #cccccc;
+}
+
+.calendar_Theme .ajax__calendar_header
+{
+    background-color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.calendar_Theme .ajax__calendar_title, .calendar_Theme .ajax__calendar_next, .calendar_Theme .ajax__calendar_prev
+{
+    color: #004080;
+    padding-top: 3px;
+}
+
+.calendar_Theme .ajax__calendar_body
+{
+    background-color: #FFFFFF;
+    border: solid 1px #cccccc;
+}
+
+.calendar_Theme .ajax__calendar_dayname
+{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 4px;
+    margin-top: 2px;
+}
+
+.calendar_Theme .ajax__calendar_day
+{
+    text-align: center;
+}
+
+.calendar_Theme .ajax__calendar_hover .ajax__calendar_day, .calendar_Theme .ajax__calendar_hover .ajax__calendar_month, .calendar_Theme .ajax__calendar_hover .ajax__calendar_year, .calendar_Theme .ajax__calendar_active
+{
+    color: #004080;
+    font-weight: bold;
+    background-color: #e9e9e9;
+}
+
+.calendar_Theme .ajax__calendar_today
+{
+    font-weight: bold;
+}
+
+.calendar_Theme .ajax__calendar_other, .calendar_Theme .ajax__calendar_hover .ajax__calendar_today, .calendar_Theme .ajax__calendar_hover .ajax__calendar_title
+{
+    color: #bbbbbb;
+}
+
+.parrafo
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.label
+{
+    float: left;
+    width: 150px;
+    text-align: left;
+    margin-right: 0.5em;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.title
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+.titleRespuesta
+{
+    font-family: Arial, 'Helvetica Neue' , Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.tablaAfiliacion
+{
+    text-align: center;
+}
+
+.pie
+{
+    font-size: 8.5pt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.pieBtn, a
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+    width: 100%;
+}
+
+
+.txtBox
+{
+    width: 159px;
+    -moz-border-radius: 6px; /* Firefox */
+    -webkit-border-radius: 6px; /* Safari, Chrome */
+    -khtml-border-radius: 6px; /* KHTML */
+    border-radius: 6px; /* CSS3 */
+}
+.txtBox:focus
+{
+    background-color: #ecede8;
+}
+
+/* Estilo usado en las tablas */
+.DataGrid_AlternatingItem
+{
+    background-color: Transparent;
+    color: #39420C;
+    font-family: Arial, 'Helvetica Neue' , Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+}
+.DataGrid_Container
+{
+    background-color: Transparent;
+}
+.DataGrid_Footer
+{
+    background-color: White;
+}
+.DataGrid_Header
+{
+    background-color: Transparent;
+    color: Black;
+    font-family: Arial, 'Helvetica Neue' , Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.DataGrid_Item
+{
+    background-color: Transparent;
+    color: Black;
+    font-family: Arial, 'Helvetica Neue' , Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+}
+.DataGrid_SelectedItem
+{
+    background-color: Transparent;
+    color: Blue;
+    font-family: Arial, 'Helvetica Neue' , Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+
+#GridViewBasica
+{
+    width: 70%;
+}
+
+.center
+{
+    margin: 0 0 0 25%;
+}
+#GridViewAfiliacion
+{
+    width: 100%;
+}
+.error
+{
+    color: red;
+    font-size: 20px;
+    font-family: Arial, 'Helvetica Neue' , Helvetica, sans-serif;
+    text-align: center;
+}
+
+.label2
+{
+    float: left;
+    width: 150px;
+    text-align: left;
+    margin-right: 0.5em;
+    margin-bottom: 45px;
+    font-weight: bold;
+    font-size: 15px;
+}
+#parrafos_fin
+{
+    text-align: left;
+}
+
+td
+{
+    width: 222px;
+    text-align: center;
+}
+.TableHeader
+{
+    background-color: #3498DB;
+    color: #39420C;
+    font-family: Arial, 'Helvetica Neue' , Helvetica, sans-serif;
+}
+table
+{
+    width: 52%;
+    border-collapse: collapse;
+    border: 2px;
+    border-color: black;
+    font-family: Arial, 'Helvetica Neue' , Helvetica, sans-serif;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+#pie_foto {
+    color: #39420C;
+    font-weight: bold;
+}
+
+.tabla_limpia{
+    border: hidden;
+    font-size:10px;
+}

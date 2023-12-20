@@ -1,0 +1,3 @@
+$(document).ready(function() {
+    $('.header-second #menu-sharepoint .ms-core-listMenu-root li.static:eq(6) ul.dynamic:eq(0)').removeClass("megamenu");
+}) /*Fin JS*/
